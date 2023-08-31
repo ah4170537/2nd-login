@@ -326,7 +326,7 @@ input{
     }
     .container{
         width: 300px;
-        height: 350px;
+        height: 330px;
     }
     .box1 p{
         font-size: 1.2rem;
@@ -347,7 +347,7 @@ input{
     .btns{
         height: 35px;
         width: 90px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     .cd a{
         font-size: 0.8rem;
