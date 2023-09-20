@@ -68,8 +68,9 @@
     width: 500px;
 }
 .box1{
-    background-image: url(https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149158065.jpg);
+    background:rgba(0,0, 0,0.8) url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjM2Ny1iaW5uLTM0LWphcGFuZXNlcGF0dGVybl8yLmpwZw.jpg?s=Rx49BAOEXpi4ee07miKVfOCMGKq5AqLiHhIwsoCdidk);
     background-position: center;
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -80,6 +81,7 @@
     flex-direction: column;
     position: absolute;
     backface-visibility: hidden;
+    border-radius: 10px;
 }
 .box1 p{
     font-family:monospace ;
@@ -117,6 +119,7 @@ input{
     height: 50px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
 }
 .btns{
     position: relative;
@@ -173,7 +176,8 @@ input{
     color: white;
 }
 .box2{
-    background-image: url(https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149158065.jpg);
+    background:rgba(0,0, 0,0.8) url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjM2Ny1iaW5uLTM0LWphcGFuZXNlcGF0dGVybl8yLmpwZw.jpg?s=Rx49BAOEXpi4ee07miKVfOCMGKq5AqLiHhIwsoCdidk);
+    background-blend-mode: darken;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,6 +190,7 @@ input{
     position: absolute;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    border-radius: 10px;
 }
 .box2 p{
     font-family:monospace ;
@@ -201,10 +206,10 @@ input{
         width: 450px;
     }
     .box1 p{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .box2 p{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .pass{
         width: 85%;
@@ -233,10 +238,10 @@ input{
         height: 400px;
     }
     .box1 p{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     .box2 p{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     .pass{
         width: 88%;
@@ -260,38 +265,85 @@ input{
 }
 @media (max-width:420px){
     .box p span{
-        font-size: 1.2rem;
-        margin: 0px 15px 0px 15px;
+        font-size: 1.5rem;
+        margin: 0px 20px 0px 20px;
     }
     .togglelabel{
-        height: 17px;
-        width: 85px;
+        height: 20px;
+        width: 90px;
     }
     .togglelabel::before{
-        height: 24px;
-        width: 24px;
-        top: -3.5px;
-        font-size: 0.9rem;
+        height: 30px;
+        width: 30px;
+        top: -5px;
+        font-size: 1rem;
     }
     .toggleinput:checked + .togglelabel::before{
-        transform: translateX(68px) rotate(440deg);
+        transform: translateX(72px) rotate(440deg);
     }
     .container{
         width: 350px;
-        height: 370px;
+        height: 400px;
     }
     .box1 p{
-        font-size: 1.3rem;
+        font-size: 1.9rem;
     }
     .box2 p{
-        font-size: 1.3rem;
+        font-size: 1.9rem;
+    }
+    .pass{
+        width: 88%;
+        height: 45px;
+    }
+    .ab .pass a i{
+        font-size: 24px;
+    }
+    .inp{
+        font-size: 0.8rem;
+    }
+    .btns{
+        height: 45px;
+        width: 110px;
+        font-size: 1rem;
+    }
+    .cd a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:370px){
+    .box p span{
+        font-size: 1.2rem;
+        margin: 0px 20px 0px 20px;
+    }
+    .togglelabel{
+        height: 15px;
+        width: 80px;
+    }
+    .togglelabel::before{
+        height: 25px;
+        width: 25px;
+        top: -5px;
+        font-size: 1rem;
+    }
+    .toggleinput:checked + .togglelabel::before{
+        transform: translateX(70px) rotate(440deg);
+    }
+    .container{
+        width: 300px;
+        height: 380px;
+    }
+    .box1 p{
+        font-size: 1.5rem;
+    }
+    .box2 p{
+        font-size: 1.5rem;
     }
     .pass{
         width: 90%;
-        height: 40px;
+        height: 45px;
     }
     .ab .pass a i{
-        font-size: 22px;
+        font-size: 20px;
     }
     .inp{
         font-size: 0.7rem;
@@ -299,106 +351,74 @@ input{
     .btns{
         height: 40px;
         width: 100px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .cd a{
         font-size: 0.8rem;
     }
-
+    .pass{
+        margin-top: 5px;
+    }
+    .btns{
+        margin-top: 25px;
+    }
+    .cd{
+        margin-top: -10px;
+    }
 }
-@media (max-width:370px){
+@media (max-width:320px){
     .box p span{
-        font-size: 1rem;
-        margin: 0px 12px 0px 12px;
+        font-size: 1.1rem;
+        margin: 0px 20px 0px 20px;
     }
     .togglelabel{
         height: 15px;
         width: 80px;
     }
     .togglelabel::before{
-        height: 22px;
-        width: 22px;
-        top: -3.5px;
-        font-size: 0.8rem;
+        height: 25px;
+        width: 25px;
+        top: -5px;
+        font-size: 1rem;
     }
     .toggleinput:checked + .togglelabel::before{
-        transform: translateX(67px) rotate(440deg);
-    }
-    .container{
-        width: 300px;
-        height: 330px;
-    }
-    .box1 p{
-        font-size: 1.2rem;
-    }
-    .box2 p{
-        font-size: 1.2rem;
-    }
-    .pass{
-        width: 90%;
-        height: 35px;
-    }
-    .ab .pass a i{
-        font-size: 20px;
-    }
-    .inp{
-        font-size: 0.6rem;
-    }
-    .btns{
-        height: 35px;
-        width: 90px;
-        font-size: 0.7rem;
-    }
-    .cd a{
-        font-size: 0.8rem;
-    }
-
-}
-@media (max-width:320px){
-    .box p span{
-        font-size: 0.9rem;
-        margin: 0px 10px 0px 10px;
-    }
-    .togglelabel{
-        height: 12px;
-        width: 75px;
-    }
-    .togglelabel::before{
-        height: 20px;
-        width: 20px;
-        top: -4px;
-        font-size: 0.7rem;
-    }
-    .toggleinput:checked + .togglelabel::before{
-        transform: translateX(66px) rotate(440deg);
+        transform: translateX(70px) rotate(440deg);
     }
     .container{
         width: 250px;
         height: 320px;
     }
     .box1 p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .box2 p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .pass{
-        width: 90%;
-        height: 35px;
+        width: 95%;
+        height: 40px;
     }
     .ab .pass a i{
-        font-size: 17px;
+        font-size: 15px;
     }
     .inp{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     .btns{
-        height: 35px;
+        height: 30px;
         width: 90px;
         font-size: 0.7rem;
     }
     .cd a{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
-
+    .pass{
+        margin-top: 5px;
+    }
+    .btns{
+        margin-top: 20px;
+    }
+    .cd{
+        margin-top: -15px;
+    }
 }
